@@ -1,0 +1,19 @@
+<%layout("/layouts/boilerplate")%>
+<body>
+    <!-- <form method = "GET" action = "/listings/new">
+        <button>Create new Listings</button>
+    </form> -->
+    <div class="row row-cols-lg-4">
+        <%for(let listings of allListings){%>
+        <div class="card" style="width: 18rem;">  
+            <img src="<%=listings.image%>" class="card-img-top" alt="listings_img">
+            <div class="card-body">
+                <p class="card-text">
+                    <%=listings.title%> <br>
+                    &#8377; <%=listings.price.toLocaleString("en-IN")%>
+                </p>
+            </div>
+        </div>
+        <%}%>
+    </div>
+</body>

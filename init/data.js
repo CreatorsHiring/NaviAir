@@ -1,4 +1,4 @@
-const sampleListings = [
+const sampleListings = [ //this is the sample data for the listings, it will be used to populate the database when the server starts
   {
     title: "Cozy Beachfront Cottage",
     description:
@@ -101,4 +101,4 @@ const sampleListings = [
   },
 ];
 
-module.exports = { data: sampleListings };
+module.exports = { data: sampleListings }; // here we are exporting the data in the form of an object with a key data.

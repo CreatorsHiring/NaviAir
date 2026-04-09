@@ -91,3 +91,40 @@ footer{
     text-decoration: none;
 }
 
+/*edit form*/
+.update-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/*show page*/
+.show-page-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* .card-body{
+    width: 350px;
+} */
+
+.card-img-top{
+    /* height: 40vh !important;
+    width: 30vw !important; */
+    object-fit: cover !important;
+}
+
+.card-body-btns{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.show-edit-btn{
+    margin-left: 15px !important;
+}
+
+.show-delete-btn{
+    margin-right: 120px !important;
+}

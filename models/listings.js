@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const listingSchema = new mongoose.Schema({
+const listingSchema = new mongoose.Schema({ //schema is like skeleton of the data, it defines the structure of the data and the types of the data
     title: {
         type: String,
         required: true
@@ -24,5 +24,5 @@ const listingSchema = new mongoose.Schema({
     country: String
 });
 
-const Listing = mongoose.model("Listing", listingSchema);
-module.exports = Listing;
+const Listing = mongoose.model("Listing", listingSchema); // this is the model, its the collection of the data in our db
+module.exports = Listing; // here we are exporting the model (collection) so that we can perform CRUD operations
